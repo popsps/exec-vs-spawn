@@ -1,6 +1,6 @@
 const cp = require('child_process')
 
-cp.exec("lst -l", (error, data, stdErr) => {
+cp.exec("ls -l", (error, data, stdErr) => {
     if (error) {
         process.stderr.write(stdErr)
     }
